@@ -1,5 +1,5 @@
 #!python3
-
+import math 
 """
 Create a function that determines the length of a hypotenuse given the lengths of 2
 shorter sides
@@ -15,7 +15,11 @@ assert hypotenuse(6,8) == 10
 """
 
 
-def hypotenuse():
-    pass
+def hypotenuse(a, b):
+    a = float(a)
+    b = float(b)
+    c = math.sqrt(a*a + b*b)
+    return c
+
 
 assert hypotenuse(6,8) == 10
